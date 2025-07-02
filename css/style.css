@@ -46,3 +46,30 @@ h6 {
 }
 
 /* End of Reset */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 3fr;
+}
+
+header,
+footer {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.container > * {
+  border: 1px solid black;
+}
